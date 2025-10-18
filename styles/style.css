@@ -63,13 +63,14 @@ header {
     background-color: rgba(255, 144, 14, 0.1);
     text-align: center;
     padding: 100px;
+    padding-bottom: 50px;
 }
 
 nav {
     width: 100%;
     justify-content: space-around;
     align-items: center;
-    margin-bottom:  100px;
+    margin-bottom: 100px;
 }
 
 .brand {
@@ -93,19 +94,54 @@ nav li a {
     font-size: 1.125rem;
     font-weight: normal;
 }
-.content-container button{
+
+.content-container button {
     margin: 32px auto 50px;
 }
+
 .architecht {
     font-size: 4rem;
     font-weight: bold;
     margin-bottom: 50px;
 }
 
-.architecht-content {
+.architecht-content,
+.features-content {
     font-size: 1rem;
     font-weight: normal;
     line-height: 26px;
+}
+
+.hero img {
+    height: 700px;
+    width: 1440px;
+}
+
+/* main part styling */
+.quick-list-section {
+    justify-content: space-between;
+    align-items: center;
+    width: 1440px;
+    margin: 100px auto;
+}
+
+.features-heading {
+    font-size: 3.75rem;
+    margin-bottom: 24px;
+}
+
+.features-color {
+    color: rgba(255, 144, 14, 1);
+}
+
+.features-content {
+    margin-bottom: 32px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
 }
 
 /* responsive */
@@ -115,7 +151,37 @@ nav li a {
         flex-direction: column;
     }
 
+    header {
+        padding: 50px;
+        padding-bottom: 20px;
+    }
+
+    nav {
+        margin-bottom: 30px;
+        border-bottom: 2px solid rgba(175, 154, 130, 0.2);
+    }
+
+    .hero img {
+        height: 100%;
+        width: 100%;
+        border-radius: 16px;
+    }
+
     nav ul {
         margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .quick-list-section {
+        width: 100%;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .response {
+        padding: 50px;
+        text-align: center;
     }
 }
