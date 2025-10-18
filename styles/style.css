@@ -1,7 +1,121 @@
 /* google fonts  */
-.work-sans{
-  font-family: "Work Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight:normal;
-  font-style: normal;
+.work-sans {
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* shared styles */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.flex {
+    display: flex;
+}
+
+/* fonts color */
+
+.dark1 {
+    color: rgba(19, 19, 19, 1);
+}
+
+.dark2 {
+    color: rgba(66, 66, 66, 1);
+}
+
+.dark3 {
+    color: rgba(114, 114, 114, 1);
+}
+
+.dark4 {
+    color: rgba(161, 161, 161, 1);
+}
+
+.dark5 {
+    color: rgba(208, 208, 208, 1);
+}
+
+.dark6 {
+    color: rgba(231, 231, 231, 1);
+}
+
+.dark7 {
+    color: rgba(243, 243, 243, 1);
+}
+
+/* pimary button */
+.primary-button {
+    background-color: rgba(255, 144, 14, 1);
+    color: white;
+    padding: 20px 25px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1.25rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* header section style */
+header {
+    background-color: rgba(255, 144, 14, 0.1);
+    text-align: center;
+    padding: 100px;
+}
+
+nav {
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom:  100px;
+}
+
+.brand {
+    font-size: 2.75rem;
+    font-weight: bold;
+}
+
+nav ul {
+    gap: 2.5rem;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav li a {
+    text-decoration: none;
+    color: rgba(66, 66, 66, 1);
+    font-size: 1.125rem;
+    font-weight: normal;
+}
+.content-container button{
+    margin: 32px auto 50px;
+}
+.architecht {
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+.architecht-content {
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 26px;
+}
+
+/* responsive */
+
+@media screen and (max-width:576px) {
+    .flex {
+        flex-direction: column;
+    }
+
+    nav ul {
+        margin-top: 50px;
+    }
 }
