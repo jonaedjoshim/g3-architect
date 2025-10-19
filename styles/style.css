@@ -24,6 +24,9 @@
 
 .dark2 {
     color: rgba(66, 66, 66, 1);
+    font-weight: 600;
+    font-size: 3.75rem;
+
 }
 
 .dark3 {
@@ -111,7 +114,9 @@ nav li a {
 }
 
 .architecht-content,
-.features-content {
+.features-content,
+.fact-content,
+.sponsors-content {
     font-size: 1rem;
     font-weight: normal;
     line-height: 26px;
@@ -200,9 +205,85 @@ nav li a {
 
 .featured-architect img {
     width: 100%;
-    /* height: 962px; */
 }
 
+/* Some Facts styles */
+.some-facts {
+    margin-top: 130px;
+    margin-bottom: 180px;
+}
+
+.section-title,
+.sponsors-heading {
+    font-weight: bold;
+    font-size: 3.75rem;
+    margin-bottom: 24px;
+}
+
+.facts-container {
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.fact-card {
+    border: 2px solid rgba(255, 144, 14, 1);
+    border-radius: 8px;
+}
+
+.fact-card div {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 45px 40px 60px;
+    gap: 7px;
+}
+
+.fact-icon {
+    height: 45px;
+    width: 45px;
+}
+
+.fact-name {
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+/* sponsors styles */
+
+.our-sponsors {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.sponsor-companies {
+    width: 100%;
+    margin-top: 50px;
+    justify-content: space-around;
+    filter: grayscale(100%);
+}
+
+/* footer section styles */
+footer {
+    width: 75%;
+    background-color: rgba(255, 244, 231, 1);
+    margin: 130px auto 215px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border-radius: 8px;
+    height: 100px;
+}
+
+.footer-content {
+    margin: 40px auto;
+}
+.footer-content p{
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 30px;
+}
 /* responsive */
 
 @media screen and (max-width:576px) {
@@ -213,7 +294,7 @@ nav li a {
     main>section {
         max-width: 90vw;
         margin: 0 auto;
-   }
+    }
 
     header {
         /* width: 90vw; */
@@ -255,7 +336,7 @@ nav li a {
     }
 
     .enjoy {
-        margin: 120px auto;
+        margin: 100px auto;
         align-items: flex-start;
         gap: 70px;
         padding: 10px;
@@ -279,5 +360,19 @@ nav li a {
 
     .featured-architect img {
         width: 90vw;
+    }
+
+    .some-facts {
+        align-items: flex-start;
+    }
+
+    .fact-card {
+        margin: 40px 90px;
+    }
+    .sponsor-companies img {
+        height: 50px;
+        width: 165px;
+        margin: 25px auto;
+        gap: 24px;
     }
 }
