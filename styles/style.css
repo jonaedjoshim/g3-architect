@@ -16,6 +16,25 @@
     display: flex;
 }
 
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+a:hover {
+    color: rgba(0, 0, 0, 1);
+    font-weight: 600;
+    transform: scale(1.02);
+}
+
+.logo:hover {
+    cursor: pointer;
+    filter: grayscale(0%);
+     transform: scale(1.05);
+   
+}
+
 /* fonts color */
 
 .dark1 {
@@ -175,6 +194,10 @@ nav li a {
     font-weight: normal;
 }
 
+.enjoy-card-container {
+    margin-top: 16px;
+}
+
 .card>h3 {
     font-size: 1.25rem;
     font-weight: 600;
@@ -261,7 +284,11 @@ nav li a {
     width: 100%;
     margin-top: 50px;
     justify-content: space-around;
+}
+
+.logo {
     filter: grayscale(100%);
+    transition: filter 0.3s ease;
 }
 
 /* footer section styles */
@@ -279,11 +306,13 @@ footer {
 .footer-content {
     margin: 40px auto;
 }
-.footer-content p{
+
+.footer-content p {
     font-weight: 400;
     font-size: 1.25rem;
     line-height: 30px;
 }
+
 /* responsive */
 
 @media screen and (max-width:576px) {
@@ -369,6 +398,7 @@ footer {
     .fact-card {
         margin: 40px 90px;
     }
+
     .sponsor-companies img {
         height: 50px;
         width: 165px;
